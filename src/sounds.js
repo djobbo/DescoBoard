@@ -23,4 +23,29 @@ export const sounds = [
 		sound: 'src/sounds/BALLECBALLEC.mp3',
 		author: 'ALFy',
 	},
+
+	{
+		title: 'URBA TG',
+		thumb: 'src/imgs/Calf.png',
+		sound: 'src/sounds/URBA_TG.mp3',
+		author: 'ALFy',
+	},
+	{
+		title: 'URBA COCHON',
+		thumb: 'src/imgs/Calf.png',
+		sound: 'src/sounds/URBADORCOCHON.mp3',
+		author: 'ALFy',
+	},
+	{
+		title: 'URBA LA GROSSE MERDE',
+		thumb: 'src/imgs/Calf.png',
+		sound: 'src/sounds/Urbalagrossemerde.mp3',
+		author: 'ALFy',
+	},
+	{
+		title: 'URBA LA PUTE',
+		thumb: 'src/imgs/Calf.png',
+		sound: 'src/sounds/URBALAPUTE.mp3',
+		author: 'ALFy',
+	},
 ];
