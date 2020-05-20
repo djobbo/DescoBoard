@@ -11,4 +11,10 @@ export const sounds = [
 		description: "Alexis c'est un veau",
 		sound: 'src/sounds/SLTCAVAAAAAAAAA.mp3',
 	},
+	{
+		title: 'JSUIS PAS 1 PD',
+		thumb: 'src/imgs/Calf.png',
+		description: "Alexis c'est un veau",
+		sound: 'src/sounds/CHUISPA1PD-1.mp3',
+	},
 ];
