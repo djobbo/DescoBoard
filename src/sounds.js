@@ -4,17 +4,20 @@ export const sounds = [
 		thumb: 'src/imgs/Calf.png',
 		description: "Alexis c'est un veau",
 		sound: 'src/sounds/OUIIIIIIIIIIIIIIIII.mp3',
+		author: 'ALFy',
 	},
 	{
 		title: 'SALUT!!! CA VA?!!',
 		thumb: 'src/imgs/Calf.png',
 		description: "Alexis c'est un veau",
 		sound: 'src/sounds/SLTCAVAAAAAAAAA.mp3',
+		author: 'ALFy',
 	},
 	{
 		title: 'JSUIS PAS 1 PD',
 		thumb: 'src/imgs/Calf.png',
 		description: "Alexis c'est un veau",
 		sound: 'src/sounds/CHUISPA1PD-1.mp3',
+		author: 'ALFy',
 	},
 ];
