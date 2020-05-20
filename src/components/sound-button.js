@@ -6,13 +6,22 @@ class SoundButton extends HTMLElement {
 	set sound(sound) {
 		this.root.innerHTML = `
             <style>
+                * {
+                    font-family: 'Comfortaa', sans-serif;
+                }
                 .container {
+                    border: 1px solid gray;
+                    background-color: white;
                     display:flex;
                     align-items: center;
-                    border: none;
-                    padding: 0.5rem 1rem;
+                    padding: 0;
                     width: 100%;
                     cursor: pointer;
+                    border-radius: 0.25rem;
+                    overflow: hidden;
+                }
+                .container:hover {
+                    background-color: #eee;
                 }
                 img {
                     width: 4rem;
@@ -24,10 +33,10 @@ class SoundButton extends HTMLElement {
                 }
                 .info h2 {
                     margin: 0;
-                    font-size: 1.5rem
+                    font-size: 1.25rem
                 }
                 .info p {
-                    margin: 0 0 0.25rem 0;
+                    margin: 0 0 0.5rem 0;
                 }
             </style>
             <button class="container" onclick="this.getRootNode().host.playSound('${sound.sound}')">
