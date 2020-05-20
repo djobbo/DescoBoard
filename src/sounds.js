@@ -1,14 +1,14 @@
 export const sounds = [
 	{
-		title: 'sdsqdOUIIIIIII',
+		title: 'OUIIIIIIII',
 		thumb: 'src/imgs/Calf.png',
 		description: "Alexis c'est un veau",
 		sound: 'src/sounds/OUIIIIIIIIIIIIIIIII.mp3',
 	},
 	{
-		title: 'ALFy le veau',
+		title: 'SALUT!!! CA VA?!!',
 		thumb: 'src/imgs/Calf.png',
 		description: "Alexis c'est un veau",
-		sound: 'src/sounds/OUIIIIIIIIIIIIIIIII.mp3',
+		sound: 'src/sounds/SLTCAVAAAAAAAAA.mp3',
 	},
 ];
