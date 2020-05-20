@@ -9,18 +9,27 @@ class SoundButton extends HTMLElement {
                 * {
                     font-family: 'Comfortaa', sans-serif;
                 }
+                a, a:visited {
+                    text-decoration: none;
+                    color: white;
+                }
                 .container {
+                    display: flex;
                     border: 1px solid gray;
                     background-color: white;
+                    border-radius: 0.25rem;
+                    overflow: hidden;
+                }
+                .container button {
                     display:flex;
                     align-items: center;
                     padding: 0;
                     width: 100%;
                     cursor: pointer;
-                    border-radius: 0.25rem;
-                    overflow: hidden;
+                    border: none;
+                    background-color: transparent;
                 }
-                .container:hover {
+                .container button:hover {
                     background-color: #eee;
                 }
                 img {
@@ -38,14 +47,27 @@ class SoundButton extends HTMLElement {
                 .info p {
                     margin: 0 0 0.5rem 0;
                 }
+                .download {
+                    width: 4rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #70b77e;
+                }
+                .download:hover {
+                    background-color: #f55d3e;
+                }
             </style>
-            <button class="container" onclick="this.getRootNode().host.playSound('${sound.sound}')">
-                <img src="${sound.thumb}" alt="img"/>
-                <div class="info">
-                    <p>${sound.author}</p>
-                    <h2>${sound.title}</h2>
-                </div>
-            </button>
+            <div class="container">
+                <button onclick="this.getRootNode().host.playSound('${sound.sound}')">
+                    <img src="${sound.thumb}" alt="img"/>
+                    <div class="info">
+                        <p>${sound.author}</p>
+                        <h2>${sound.title}</h2>
+                    </div>
+                </button>
+                    <a class="download" href="${sound.sound}" download="${sound.author} - ${sound.title}">↓</a>
+            </div>
         `;
 	}
 

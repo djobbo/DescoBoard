@@ -12,7 +12,7 @@ export const sounds = [
 		author: 'ALFy',
 	},
 	{
-		title: 'JSUIS PAS 1 PD',
+		title: 'LE ',
 		thumb: 'src/imgs/Calf.png',
 		sound: 'src/sounds/CHUISPA1PD-1.mp3',
 		author: 'ALFy',
