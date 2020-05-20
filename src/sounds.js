@@ -48,4 +48,10 @@ export const sounds = [
 		sound: 'src/sounds/URBALAPUTE.mp3',
 		author: 'ALFy',
 	},
+	{
+		title: 'MAIS TOI TG!!!',
+		thumb: 'src/imgs/Calf.png',
+		sound: 'src/sounds/MAIS_TOI_TA_GUEULE.mp3',
+		author: 'ALFy',
+	},
 ];
