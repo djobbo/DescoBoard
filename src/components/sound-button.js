@@ -59,14 +59,14 @@ class SoundButton extends HTMLElement {
                 }
             </style>
             <div class="container">
-                <button onclick="this.getRootNode().host.playSound('${sound.sound}')">
+                <button onclick="this.getRootNode().host.playSound('src/sounds/${sound.title}.mp3')">
                     <img src="${sound.thumb}" alt="img"/>
                     <div class="info">
                         <p>${sound.author}</p>
                         <h2>${sound.title}</h2>
                     </div>
                 </button>
-                    <a class="download" href="${sound.sound}" download="${sound.author} - ${sound.title}">↓</a>
+                    <a class="download" href="src/sounds/${sound.title}.mp3" download="${sound.author} - ${sound.title}">↓</a>
             </div>
         `;
 	}
