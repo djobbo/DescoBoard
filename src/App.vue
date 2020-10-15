@@ -17,7 +17,7 @@
 							/>
 						</svg>
 					</span>
-					{{ search || 'Desco Board' }}
+					{{ search }}
 				</h1>
 				<svg viewBox="0 0 1000 1000" class="w-6 h-6 fill-current">
 					<path
