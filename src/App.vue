@@ -41,7 +41,7 @@
 		>
 			<SoundItem
 				v-for="sound in sounds"
-				:key="sound.name"
+				:key="sound.path"
 				:sound="sound"
 			/>
 		</div>

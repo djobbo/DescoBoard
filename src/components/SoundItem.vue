@@ -38,6 +38,7 @@
 			pause() {
 				if (!this.audio) return;
 				this.audio.pause();
+				this.audio = null;
 			},
 		},
 	};

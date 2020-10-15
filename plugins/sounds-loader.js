@@ -19,7 +19,6 @@ module.exports = function () {
 		async ({ app }) => {
 			app.use(async (ctx, next) => {
 				if (ctx.path.startsWith('/@modules/soundboard-loader')) {
-					console.log(moduleContent);
 					ctx.type = 'js';
 					ctx.body = moduleContent;
 				} else await next();
