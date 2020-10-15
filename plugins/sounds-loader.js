@@ -1,3 +1,4 @@
+const virtual = require('@rollup/plugin-virtual');
 const fs = require('fs');
 
 function parseSoundsDirectory() {
@@ -26,5 +27,9 @@ module.exports = function () {
 		},
 	];
 
-	return { configureServer };
+	const rollupInputOptions = {
+		plugins: [virtual({ 'soundboard-loader': moduleContent })],
+	};
+
+	return { configureServer, rollupInputOptions };
 };

@@ -9,6 +9,7 @@
 		"vue": "^3.0.0-rc.1"
 	},
 	"devDependencies": {
+		"@rollup/plugin-virtual": "^2.0.3",
 		"@vue/compiler-sfc": "^3.0.0-rc.1",
 		"autoprefixer": "9.8.6",
 		"tailwindcss": "^1.9.1",

@@ -1,5 +1,8 @@
 module.exports = {
-	purge: ['./public/**/*.html'],
+	purge: {
+		enabled: process.env.NODE_ENV === 'production',
+		content: ['./index.html', './src/**/*.vue', './src/**/*.js'],
+	},
 	theme: {
 		extend: {},
 		colors: {
@@ -12,4 +15,8 @@ module.exports = {
 	variants: {},
 	plugins: [],
 	buildModules: ['@nuxtjs/tailwindcss'],
+	future: {
+		removeDeprecatedGapUtilities: true,
+		purgeLayersByDefault: true,
+	},
 };

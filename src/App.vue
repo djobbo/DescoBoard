@@ -1,5 +1,5 @@
 <template>
-	<div id="root" class="relative bg-bg py-4 px-4 h-screen">
+	<div id="root" class="relative bg-bg py-4 px-4">
 		<div class="max-w-md mx-auto">
 			<div
 				v-if="!isSearching"
@@ -45,7 +45,6 @@
 				:sound="sound"
 			/>
 		</div>
-		<BottomNavBar />
 	</div>
 </template>
 
@@ -54,8 +53,6 @@
 	import BottomNavBar from './components/BottomNavBar.vue';
 
 	import { sounds } from 'soundboard-loader';
-
-	console.log(sounds);
 
 	export default {
 		name: 'App',

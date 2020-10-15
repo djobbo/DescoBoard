@@ -38,10 +38,7 @@
 			pause() {
 				if (!this.audio) return;
 				this.audio.pause();
-				this.audio = null;
 			},
 		},
 	};
 </script>
-
-<style></style>
