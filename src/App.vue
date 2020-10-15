@@ -50,9 +50,12 @@
 </template>
 
 <script>
-	import { sounds } from './sounds';
 	import SoundItem from './components/SoundItem.vue';
 	import BottomNavBar from './components/BottomNavBar.vue';
+
+	import { sounds } from 'soundboard-loader';
+
+	console.log(sounds);
 
 	export default {
 		name: 'App',
@@ -69,7 +72,10 @@
 		},
 		watch: {
 			search: function (val) {
-				this.sounds = sounds.filter((s) => s.title.includes(val));
+				const lcaseSearch = val.toLowerCase();
+				this.sounds = sounds.filter((s) =>
+					s.title.toLowerCase().includes(val)
+				);
 			},
 		},
 	};
